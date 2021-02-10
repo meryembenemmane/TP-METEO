@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	  <meta charset="UTF-8">
-	  <script>
+<head>
+	<meta charset="UTF-8">
+	<title>Méteo</title>
+	<style>dl { display: flex;flex-direction: row; }
+	dt {width: auto;margin:1em; flex:auto}
+	div {width: auto;padding:0.5em 0.5em 0.5em 0.5em;}
+	</style>
+	<script>
 		let villeCourante = "Lyon"
 		function showCity() { console.log(villeCourante); }
 	</script>
-	</head>
-	<body onload="showCity()">
-	  <h1>My First Heading</h1>
-	  <p>My first paragraph.</p>
-	</body>
+</head>
+<body onload="showCity()">
+	<center><h1 style="width: 100%;background-color: black;color: white;padding-top: 1em;padding-bottom: 1em;">TP Méteo HTML</h1></center>
+	<dl>
+		<dt>
+			<div style="background-color: lightslategrey;">
+				<h2>Lyon</h2>
+				<p>8C printemps</p>
+				<img src="./img/spring.png" alt="printemps" width="100" height="100" />
+			</div>
+		</dt>	
+		<dt >
+			<div style="background-color: lightslategrey;">
+				<h2>Poitiers</h2>
+				<p>15C été</p>
+				<img src="./img/summer.png" alt="été" width="100" height="100" />
+			</div>
+		</dt>
+		<dt>
+			<div style="background-color: lightslategrey;">
+				<h2>Niort</h2>
+				<p>8C automne</p>
+				<img src="img/noun_storm_1001980.png" alt="automne" width="100" height="100" />
+			</div>
+		</dt>
+	</dl>
+<footer>
+	<div style="background-color: lightsteelblue;">
+	<p>Meryem BENEMMANE et <a href="https://thenounproject.com"> thenounproject</a></p>
+	</div>
+</footer>
+</body>
 </html>
