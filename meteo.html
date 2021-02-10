@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Méteo</title>
+	<script src="meteo.js"></script>
+	<link rel="stylesheet" href="meteo.css">
+</head>
+<body>
+	<center><h1 style="width: 100%;background-color: black;color: white;padding-top: 1em;padding-bottom: 1em;">TP Méteo HTML</h1></center>
+	<span style="display: flex;">
+		<p>choisir une ville : </p>
+		<select onchange="showCity()" name="villes" id="ville-select">
+			<option value="">choisir une ville</option>
+			<option value="lyon">Lyon</option>
+			<option value="poitiers">Poitiers</option>
+			<option value="niort">Niort</option>
+		</select>
+	</span>
+	<h2 id="selection"></h2>
+		<div class="container">
+			<div id="lyon" class="city">
+				<span>
+					<h2>Lyon</h2>
+					<p>10° orageux</p>
+				</span>
+				<img src="./img/spring.png" alt="printemps" width="100" height="100" />
+			</div>
+
+			<div id="poitiers" class="city">
+				<span>
+					<h2>Poitiers</h2>
+					<p>25° ensolliée</p>
+				</span>
+				<img src="./img/summer.png" alt="été" width="100" height="100" />
+			</div>
+
+			<div id="niort" class="city">
+				<span>
+					<h2>Niort</h2>
+					<p>2° pluvieux</p>	
+				</span>
+				<img src="img/noun_storm_1001980.png" alt="automne" width="100" height="100" />
+			</div>
+		</div>
+<footer>
+	<div class="footer">
+	<p>Meryem BENEMMANE et <a href="https://thenounproject.com"> thenounproject</a></p>
+	</div>
+</footer>
+</body>
+</html>

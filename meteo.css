@@ -1,0 +1,11 @@
+.container { display: flex;flex-direction: row; }
+.city {
+    display:flex; 
+    background-color: lightslategrey; 
+    width: 100%;
+    margin:0.5em;
+    padding:0.5em;}
+.footer {
+    background-color: lightsteelblue;
+    padding:0.5em;
+}
